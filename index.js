@@ -14,7 +14,7 @@ router.get('/angularProjects', function (req, res) {
 })
 app.use('/', router)
 app.use('/angularProjects', angular)
-app.use('/angularProjects' + express.static(__dirname + '/public'))
-app.use('/' + express.static(__dirname + 'assets'))
+app.use(express.static('/angular/public'))
+app.use(express.static('assets'))
 
 app.listen(port)
