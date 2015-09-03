@@ -118,26 +118,30 @@
 
         // .mbr-parallax-background
         $(window).on('message', function(event){
-            if ('destroy.parallax' === event.originalEvent.data.type){
+            if (typeof $.fn.parallax !== 'undefined' && 'destroy.parallax' === event.originalEvent.data.type){
                 $('[data-parallax-id="' + event.originalEvent.data.id + '"]')
                     .removeClass('mbr-added')
                     .parallax('destroy');
             }
         });
         $(document).on('add.cards change.cards', function(event){
-            $(event.target).outerFind('.mbr-parallax-background:not(.mbr-added)').each(function(){
-                $(this).addClass('mbr-added');
-                if (!$.isMobile()){
-                    $(this).attr('data-parallax-id', ('' + Math.random()).replace(/\D/g, '')).parallax('50%', 0.3, true);
-                }
-            });
+            if(typeof $.fn.parallax !== 'undefined') {
+                $(event.target).outerFind('.mbr-parallax-background:not(.mbr-added)').each(function(){
+                    $(this).addClass('mbr-added');
+                    if (!$.isMobile()){
+                        $(this).attr('data-parallax-id', ('' + Math.random()).replace(/\D/g, '')).parallax('50%', 0.3, true);
+                    }
+                });
+            }
         });
 
         // .mbr-social-likes
         $(document).on('add.cards', function(event){
-            $(event.target).outerFind('.mbr-social-likes:not(.mbr-added)').on('counter.social-likes', function(event, service, counter){
-                if (counter > 999) $('.social-likes__counter', event.target).html(Math.floor(counter / 1000) + 'k');
-            }).socialLikes({initHtml : false});
+            if(typeof $.fn.socialLikes !== 'undefined') {
+                $(event.target).outerFind('.mbr-social-likes:not(.mbr-added)').on('counter.social-likes', function(event, service, counter){
+                    if (counter > 999) $('.social-likes__counter', event.target).html(Math.floor(counter / 1000) + 'k');
+                }).socialLikes({initHtml : false});
+            }
         });
 
         // .mbr-nav-collapse, .mbr-nav-toggle
@@ -243,6 +247,7 @@
             }).end().html('').addClass('mbr-google-map--loaded');
             if (markers.length){
                 var map = this.Map = new google.maps.Map(this, {
+                    scrollwheel: false,
                     zoom      : params.zoom,
                     mapTypeId : google.maps.MapTypeId[params.type],
                     center    : coord(params.center || markers[0].coord)
@@ -370,7 +375,7 @@
                                 .attr('src', previewURL)
                                 .parent()
                         );
-                        if (!$.isMobile()){
+                        if (typeof $.fn.YTPlayer !== 'undefined' && !$.isMobile()){
                             var params = eval('(' + ($(this).data('bg-video-params') || '{}') + ')');
                             $('.container:eq(0)', this).before('<div class="mbr-background-video"></div>').prev()
                                 .YTPlayer($.extend({
@@ -419,25 +424,7 @@
 
     });
 
-})(jQuery);if (!window.google || !google.maps){
-    window.google = window.google || {};
-    google.maps = google.maps || {};
-    document.write('<' + 'script src="' +
-        'http' + ('https:' == location.protocol ? 's' : '') + '://maps.googleapis.com/maps/api/js' +
-    '"><' + '/script>');
-}if (!window.google || !google.maps){
-    window.google = window.google || {};
-    google.maps = google.maps || {};
-    document.write('<' + 'script src="' +
-        'http' + ('https:' == location.protocol ? 's' : '') + '://maps.googleapis.com/maps/api/js' +
-    '"><' + '/script>');
-}if (!window.google || !google.maps){
-    window.google = window.google || {};
-    google.maps = google.maps || {};
-    document.write('<' + 'script src="' +
-        'http' + ('https:' == location.protocol ? 's' : '') + '://maps.googleapis.com/maps/api/js' +
-    '"><' + '/script>');
-}
+})(jQuery);
 !function() {
 	document.getElementsByClassName('engine')[0].getElementsByTagName('a')[0].removeAttribute('rel');
 
@@ -445,7 +432,7 @@
         var e = document.createElement("section");
         e.id = "top-1";
         e.className = "engine";
-        e.innerHTML = '<a href="http://mobirise.com">mobirise.com</a> Mobirise v1.9.1';
+        e.innerHTML = '<a href="http://mobirise.com">mobirise.com</a> Mobirise v1.9.2';
         document.body.insertBefore(e, document.body.childNodes[0]);
     }
 }();

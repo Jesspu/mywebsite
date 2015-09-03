@@ -59,11 +59,11 @@
           "_name": "msg-box2",
           "_anchor": "msg-box2-5",
           "_params": {
-            "bgImageRadio": true,
+            "bgImageRadio": false,
             "parallax": true,
             "bgImage": "{PROJECT_IMAGES}angularjs-ionic-framework.png",
-            "bgColor": "#fff",
-            "bgColorRadio": false,
+            "bgColor": "#c1c1c1",
+            "bgColorRadio": true,
             "bgVideo": {
               "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
@@ -128,7 +128,8 @@
               "color": "#252525"
             },
             "H2": {
-              "text-align": "left"
+              "text-align": "left",
+              "color": "#ffffff"
             }
           },
           "_name": "msg-box2",
@@ -137,7 +138,7 @@
             "bgImageRadio": false,
             "parallax": true,
             "bgImage": "{PROJECT_IMAGES}bg3.jpg",
-            "bgColor": "#fff",
+            "bgColor": "#c1c1c1",
             "bgColorRadio": true,
             "bgVideo": {
               "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
@@ -206,7 +207,7 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#444444"
           },
-          "text": "Copyright (с) 2015 Jess Patton. Terms of Use  | Privacy Policy<br>Contact me at my <a href=\"https://www.linkedin.com/in/jesspu44\">LinkedIN</a>, or check out my &nbsp;<a href=\"http://stackoverflow.com/users/4084783/jess-patton\">StackOverflow</a>."
+          "text": "Copyright (с) 2015 Jess Patton. <a href=\"termsofservice.html\" target=\"_blank\">Terms of Use</a> &nbsp;| <a href=\"privacypolicy.html\" target=\"_blank\">Privacy Policy</a><br>Contact me at my <a href=\"https://www.linkedin.com/in/jesspu44\">LinkedIN</a>, or check out my &nbsp;<a href=\"http://stackoverflow.com/users/4084783/jess-patton\">StackOverflow</a>."
         }
       ]
     },

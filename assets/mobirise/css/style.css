@@ -2135,58 +2135,7 @@ html {
 .social-likes_style-2 .social-likes__icon:hover .social-likes__counter {
   background: #3c3c3c;
 }
-/*-------
-
-   Slider
-
--------*/
-.mbr-slider .carousel-inner > .active,
-.mbr-slider .carousel-inner > .next,
-.mbr-slider .carousel-inner > .prev {
-	display: table;
-}
-.mbr-slider .carousel-control {
-    background-image: none;
-    width: 54px;
-    height: 54px;
-    top: 50%;
-    margin-top: -27px;
-    line-height: 54px;
-    border: 2px solid #fff;
-    opacity: 1;
-    text-shadow: none;
-    z-index: 5;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    -o-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
-}
-.mbr-slider .carousel-control.left {
-	margin-left: 20px;
-}
-.mbr-slider .carousel-control.right {
-	margin-right: 20px;
-}
-.mbr-slider .carousel-control:hover {
-	background: #fff;
-	color: #000;
-}
-.mbr-slider .carousel-indicators {
-    bottom: 20px;
-}
-.mbr-slider .carousel-indicators li,
-.mbr-slider .carousel-indicators .active {
-    width: 15px;
-    height: 15px;
-    margin: 3px;
-    border: 2px solid #ffffff;
-}
-
-@media (max-width: 767px) {
-    .mbr-slider .carousel-control {
-        top: auto;
-        bottom: 20px;
-    }
-}.engine {
+.engine {
 	position: absolute;
 	text-indent: -2400px;
 	text-align: center;
