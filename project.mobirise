@@ -207,7 +207,7 @@
             "overlayOpacity": 0.8,
             "overlayColor": "#444444"
           },
-          "text": "Copyright (с) 2015 Jess Patton. <a href=\"termsofservice.html\" target=\"_blank\">Terms of Use</a> &nbsp;| <a href=\"privacypolicy.html\" target=\"_blank\">Privacy Policy</a><br>Contact me at my <a href=\"https://www.linkedin.com/in/jesspu44\">LinkedIN</a>, or check out my &nbsp;<a href=\"http://stackoverflow.com/users/4084783/jess-patton\">StackOverflow</a>."
+          "text": "Copyright (с) 2015 Jess Patton. <a href=\"http://www.jesspatton.com/termsofservice\" target=\"_blank\">Terms of Use</a> &nbsp;| <a href=\"privacypolicy.html\" target=\"_blank\">Privacy Policy</a><br>Contact me at my <a href=\"https://www.linkedin.com/in/jesspu44\">LinkedIN</a>, or check out my &nbsp;<a href=\"http://stackoverflow.com/users/4084783/jess-patton\">StackOverflow</a>."
         }
       ]
     },
