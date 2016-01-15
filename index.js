@@ -19,4 +19,4 @@ app.use('/', router)
 
 app.use(express.static('assets'))
 
-app.listen(port)
+app.listen(process.env.PORT)
