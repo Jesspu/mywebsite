@@ -1,6 +1,9 @@
 {
   "settings": {
-    "currentPage": "termsofservice.html"
+    "currentPage": "termsofservice.html",
+    "versionFirst": "2.8.6",
+    "versionPublish": "2.8.6",
+    "name": "mywebsite"
   },
   "pages": {
     "index.html": {
@@ -14,19 +17,28 @@
       "components": [
         {
           "_styles": {
-            ".caption h3": {
+            ".mbr-header .mbr-header__text": {
+              "text-align": "center",
               "color": "#fff"
             },
-            "P": {
+            ".mbr-header .mbr-header__subtext": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-article": {
               "color": "#fff"
             }
           },
           "_name": "content5",
           "_anchor": "content5-3",
           "_params": {
+            "showCaption": true,
+            "showTitle": true,
+            "showText": true,
+            "showButton": false,
             "bgImageRadio": false,
             "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}angularjs-ionic-framework.png",
+            "bgImage": "@PROJECT_PATH@/assets/images/angularjs-ionic-framework.png",
             "bgColor": "#3d8eb9",
             "bgColorRadio": true,
             "bgVideo": {
@@ -36,24 +48,26 @@
             "overlay": true,
             "overlayOpacity": 0.6,
             "overlayColor": "#28324e",
-            "showTitle": true,
-            "showCaption": true
+            "showMeta": false,
+            "darkBackground": true
           },
           "title": "Jess Patton",
-          "caption": "<p>I am a hybrid mobile application developer. I build apps from front to back using the mean stack (MongoDB, Express, AngularJS, NodeJS). &nbsp;I am currently getting a philosophy degree from Princeton University. While I love philosophy, my real passion is software development. I have built corporate level apps, for Android and iOS, using a combination of angularJS, the Ionic Framework, and Cordova. I also like to work on some NodeJS projects and build some personal apps in my free time.&nbsp;</p>"
+          "meta": "",
+          "text": "<p>I am a hybrid mobile application developer. I build apps from front to back using the mean stack (MongoDB, Express, AngularJS, NodeJS). &nbsp;I am currently getting a philosophy degree from Princeton University. While I love philosophy, my real passion is software development. I have built corporate level apps, for Android and iOS, using a combination of angularJS, the Ionic Framework, and Cordova. I also like to work on some NodeJS projects and build some personal apps in my free time.&nbsp;</p>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">LEARN MORE</a>"
         },
         {
           "_inherit": "msg-box1",
           "_styles": {
-            "h2": {
-              "color": "#252525"
-            },
-            "p": {
-              "color": "#252525"
-            },
             "H2": {
               "text-align": "left",
               "color": "#ffffff"
+            },
+            ".mbr-header .mbr-header__text": {
+              "color": "#252525"
+            },
+            ".mbr-article": {
+              "color": "#252525"
             }
           },
           "_name": "msg-box2",
@@ -61,7 +75,7 @@
           "_params": {
             "bgImageRadio": false,
             "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}angularjs-ionic-framework.png",
+            "bgImage": "@PROJECT_PATH@/assets/images/angularjs-ionic-framework.png",
             "bgColor": "#c1c1c1",
             "bgColorRadio": true,
             "bgVideo": {
@@ -71,22 +85,20 @@
             "overlay": true,
             "overlayOpacity": 0.5,
             "overlayColor": "#222",
-            "inverse": false,
             "showTitle": true,
             "showText": false
           },
-          "button": "",
           "title": "THE TOOLS I USE",
-          "text": ""
+          "text": "",
+          "button": ""
         },
         {
           "_name": "features1",
           "_anchor": "features1-1",
           "_params": {
-            "columns": "3",
             "bgImageRadio": false,
             "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}angularjs-ionic-framework.png",
+            "bgImage": "@PROJECT_PATH@/assets/images/angularjs-ionic-framework.png",
             "bgColor": "#fff",
             "bgColorRadio": true,
             "bgVideo": {
@@ -96,40 +108,120 @@
             "overlay": true,
             "overlayOpacity": 0.5,
             "overlayColor": "#222",
+            "showHeader": false,
+            "showSubheader": false,
+            "columns": "3",
             "showImages": true,
             "showTitles": true,
             "showCaptions": true,
             "showButtons": true
           },
-          "img1": "{PROJECT_IMAGES}angularjs.png",
+          "headerAlign": "left",
+          "header": "DROP-DEAD EASY WEBSITE MAKER",
+          "subheader": "By John Smith posted July 30, 2015",
+          "media1": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/angularjs.png",
+              "width": 600,
+              "class": "mbr-figure__img",
+              "active": true
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
           "title1": "Angular JS",
           "caption1": "HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.",
-          "button1": "<a data-app-btn=\"true\" href=\"https://angularjs.org/\" class=\"btn btn-default\" target=\"_blank\">LEARN MORE</a>",
-          "img2": "{PROJECT_IMAGES}ionic.png",
+          "button1": "<a data-app-btn=\"true\" href=\"https://angularjs.org/\" class=\"mbr-buttons__btn btn-wrap btn-xs-lg btn btn-default\" target=\"_blank\">LEARN MORE</a>",
+          "media2": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/ionic.png",
+              "width": 600,
+              "class": "mbr-figure__img",
+              "active": true
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
           "title2": "Ionic Framework",
           "caption2": "Ionic is the beautiful, open source front-end SDK for developing hybrid mobile apps with web technologies.&nbsp;",
-          "button2": "<a data-app-btn=\"true\" href=\"http://ionicframework.com/\" class=\"btn btn-default\" target=\"_blank\">LEARN MORE</a>",
-          "img3": "{PROJECT_IMAGES}cordova.png",
+          "button2": "<a data-app-btn=\"true\" href=\"http://ionicframework.com/\" class=\"mbr-buttons__btn btn-wrap btn-xs-lg btn btn-default\" target=\"_blank\">LEARN MORE</a>",
+          "media3": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/cordova.png",
+              "width": 600,
+              "class": "mbr-figure__img",
+              "active": true
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
           "title3": "Cordova",
           "caption3": "Apache Cordova is a set of device APIs that allow a mobile app developer to access native device function such as the camera or accelerometer from JavaScript. Combined with a UI framework such as jQuery Mobile or Dojo Mobile or Sencha Touch, this allows a smartphone app to be developed with just HTML, CSS, and JavaScript.",
-          "button3": "<a data-app-btn=\"true\" href=\"https://cordova.apache.org/\" class=\"btn btn-default\" target=\"_blank\">LEARN MORE</a>",
-          "img4": "{PROJECT_IMAGES}unlimited-websites.png",
+          "button3": "<a data-app-btn=\"true\" href=\"https://cordova.apache.org/\" class=\"mbr-buttons__btn btn-wrap btn-xs-lg btn btn-default\" target=\"_blank\">LEARN MORE</a>",
+          "media4": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/unlimited-websites.png",
+              "width": 600,
+              "class": "mbr-figure__img",
+              "active": true
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
           "title4": "UNLIMITED WEBSITES",
           "caption4": "Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.",
-          "button4": "<a data-app-btn=\"true\" href=\"http://mobirise.com\" class=\"btn btn-default\">LEARN MORE</a>"
+          "button4": "<a data-app-btn=\"true\" href=\"http://mobirise.com\" class=\"mbr-buttons__btn btn-wrap btn-xs-lg btn btn-default\">LEARN MORE</a>",
+          "media5": {
+            "image": {
+              "active": true,
+              "src": "images/blocks.png",
+              "class": "mbr-figure__img",
+              "width": 600
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "title5": "TRENDY WEBSITE BLOCKS",
+          "caption5": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+          "button5": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>",
+          "media6": {
+            "image": {
+              "active": true,
+              "src": "images/host.png",
+              "class": "mbr-figure__img",
+              "width": 600
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "title6": "HOST ANYWHERE",
+          "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
+          "button6": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>"
         },
         {
           "_inherit": "msg-box1",
           "_styles": {
-            "h2": {
-              "color": "#252525"
-            },
-            "p": {
-              "color": "#252525"
-            },
             "H2": {
               "text-align": "left",
               "color": "#ffffff"
+            },
+            ".mbr-header .mbr-header__text": {
+              "color": "#252525"
+            },
+            ".mbr-article": {
+              "color": "#252525"
             }
           },
           "_name": "msg-box2",
@@ -137,7 +229,7 @@
           "_params": {
             "bgImageRadio": false,
             "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}bg3.jpg",
+            "bgImage": "@PROJECT_PATH@/assets/images/bg3.jpg",
             "bgColor": "#c1c1c1",
             "bgColorRadio": true,
             "bgVideo": {
@@ -147,22 +239,20 @@
             "overlay": false,
             "overlayOpacity": 0.5,
             "overlayColor": "#222",
-            "inverse": false,
             "showTitle": true,
             "showText": false
           },
-          "button": "",
           "title": "MY PROJECTS",
-          "text": ""
+          "text": "",
+          "button": ""
         },
         {
           "_name": "features1",
           "_anchor": "features1-7",
           "_params": {
-            "columns": 4,
             "bgImageRadio": false,
             "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}bg3.jpg",
+            "bgImage": "@PROJECT_PATH@/assets/images/bg3.jpg",
             "bgColor": "#fff",
             "bgColorRadio": true,
             "bgVideo": {
@@ -172,27 +262,107 @@
             "overlay": false,
             "overlayOpacity": 0.5,
             "overlayColor": "#222",
+            "showHeader": false,
+            "showSubheader": false,
+            "columns": 4,
             "showImages": false,
             "showTitles": true,
             "showCaptions": true,
             "showButtons": true
           },
-          "img1": "{PROJECT_IMAGES}bootstrap.png",
+          "headerAlign": "left",
+          "header": "DROP-DEAD EASY WEBSITE MAKER",
+          "subheader": "By John Smith posted July 30, 2015",
+          "media1": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/bootstrap.png",
+              "width": 600,
+              "class": "mbr-figure__img",
+              "active": true
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
           "title1": "FIRSTFLEET MOBILE ANDROID",
           "caption1": "Company drivers can review load assignments, view pay information, upload proof-of-delivery documents and see blog entries. Business partners can track load status, search for proof of delivery documents, and read the company blog.",
-          "button1": "<a data-app-btn=\"true\" href=\"https://play.google.com/store/apps/details?id=com.FirstFleetInc.www\" class=\"btn btn-default\" target=\"_blank\">SEE IT</a>",
-          "img2": "{PROJECT_IMAGES}responsive.png",
+          "button1": "<a data-app-btn=\"true\" href=\"https://play.google.com/store/apps/details?id=com.FirstFleetInc.www\" class=\"mbr-buttons__btn btn-wrap btn-xs-lg btn btn-default\" target=\"_blank\">SEE IT</a>",
+          "media2": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/responsive.png",
+              "width": 600,
+              "class": "mbr-figure__img",
+              "active": true
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
           "title2": "FIRSTFLEET MOBILE<br> IOS",
           "caption2": "Company drivers can review load assignments, view pay information, upload proof-of-delivery documents and see blog entries. Business partners can track load status, search for proof of delivery documents, and read the company blog.",
-          "button2": "<a data-app-btn=\"true\" href=\"https://itunes.apple.com/us/app/firstfleet-mobile/id1001166087?ls=1&amp;mt=8\" class=\"btn btn-default\" target=\"_blank\">SEE IT</a>",
-          "img3": "{PROJECT_IMAGES}google-fonts.png",
-          "title3": "SIDEKICK FOR <br>ELITE DANGEROUS",
-          "caption3": "An app to track changing commodity prices for the space simulator Elite Dangours. <i>*Right now the app is not listed. I took it down to rebuild the backend for relaunch due to its unexpected popularity.&nbsp;</i>",
-          "button3": "",
-          "img4": "{PROJECT_IMAGES}unlimited-websites.png",
+          "button2": "<a data-app-btn=\"true\" href=\"https://itunes.apple.com/us/app/firstfleet-mobile/id1001166087?ls=1&amp;mt=8\" class=\"mbr-buttons__btn btn-wrap btn-xs-lg btn btn-default\" target=\"_blank\">SEE IT</a>",
+          "media3": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/google-fonts.png",
+              "width": 600,
+              "class": "mbr-figure__img",
+              "active": true
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "title3": "TWIDIAL<br>(ANDROID AND IOS)",
+          "caption3": "Calling app powered by Twilio. Uses the Twilio RestAPI to make bridged phone calls between a verified twilio number and your smartphone. Want to call someone from your office number on your cell phone? Want to make cheap international calls? Want to call your dev team in Russia from a local Russian number? Now you can!<i>&nbsp;</i>",
+          "button3": "<a data-app-btn=\"true\" href=\"https://play.google.com/store/apps/details?id=com.twiDial.www\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">SEE IT</a>",
+          "media4": {
+            "image": {
+              "src": "@PROJECT_PATH@/assets/images/unlimited-websites.png",
+              "width": 600,
+              "class": "mbr-figure__img",
+              "active": true
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
           "title4": "FANTASY AFTERMATH",
           "caption4": "Didn't win your fantasy football game and want to know why!? Fantasy Aftermath shows you which players met, underperformed, or outperformed their weekly projections. Track your players through the season to help make better informed decisions.&nbsp;",
-          "button4": "<a data-app-btn=\"true\" href=\"http://www.fantasyaftermath.com\" class=\"btn btn-default\" target=\"_blank\">SEE IT</a>"
+          "button4": "<a data-app-btn=\"true\" href=\"http://www.fantasyaftermath.com\" class=\"mbr-buttons__btn btn-wrap btn-xs-lg btn btn-default\" target=\"_blank\">SEE IT</a>",
+          "media5": {
+            "image": {
+              "active": true,
+              "src": "images/blocks.png",
+              "class": "mbr-figure__img",
+              "width": 600
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "title5": "TRENDY WEBSITE BLOCKS",
+          "caption5": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+          "button5": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>",
+          "media6": {
+            "image": {
+              "active": true,
+              "src": "images/host.png",
+              "class": "mbr-figure__img",
+              "width": 600
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "title6": "HOST ANYWHERE",
+          "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
+          "button6": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>"
         },
         {
           "_name": "footer1",
@@ -200,7 +370,7 @@
           "_params": {
             "bgImageRadio": false,
             "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}bg3.jpg",
+            "bgImage": "@PROJECT_PATH@/assets/images/bg3.jpg",
             "bgColor": "#444444",
             "bgColorRadio": true,
             "overlay": true,
@@ -218,38 +388,37 @@
       "components": [
         {
           "_styles": {
-            "h2": {
-              "color": "#fff"
-            },
-            "p": {
-              "color": "#fff"
-            },
             "DIV": {
               "color": "#ffffff"
+            },
+            ".mbr-header .mbr-header__text": {
+              "color": "#fff"
+            },
+            ".mbr-article": {
+              "color": "#fff"
             }
           },
           "_name": "msg-box1",
           "_anchor": "msg-box1-11",
           "_params": {
+            "showTitle": true,
+            "showText": true,
             "bgImageRadio": false,
+            "bgImage": "@PROJECT_PATH@/assets/images/bg3.jpg",
             "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}bg3.jpg",
-            "bgColor": "#3C3C3C",
             "bgColorRadio": true,
+            "bgColor": "#3C3C3C",
+            "bgVideoRadio": false,
             "bgVideo": {
               "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
-            "bgVideoRadio": false,
             "overlay": false,
-            "overlayOpacity": 0.5,
             "overlayColor": "#222",
-            "inverse": false,
-            "showTitle": true,
-            "showText": true
+            "overlayOpacity": 0.5
           },
-          "button": "",
           "title": "TERMS OF SERVICE",
-          "text": "&nbsp;Web Site Terms and Conditions of Use<div>1. Terms</div><div><br></div><div>By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.</div><div>2. Use License</div><div><br></div><div>&nbsp; &nbsp; Permission is granted to temporarily download one copy of the materials (information or software) on Jess Patton's web site for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</div><div>&nbsp; &nbsp; &nbsp; &nbsp; modify or copy the materials;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; attempt to decompile or reverse engineer any software contained on Jess Patton's web site;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; remove any copyright or other proprietary notations from the materials; or</div><div>&nbsp; &nbsp; &nbsp; &nbsp; transfer the materials to another person or \"mirror\" the materials on any other server.</div><div>&nbsp; &nbsp; This license shall automatically terminate if you violate any of these restrictions and may be terminated by Jess Patton at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</div><div><br></div><div>3. Disclaimer</div><div><br></div><div>&nbsp; &nbsp; The materials on Jess Patton's web site are provided \"as is\". Jess Patton makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, Jess Patton does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.</div><div><br></div><div>4. Limitations</div><div><br></div><div>In no event shall Jess Patton or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on Jess Patton's Internet site, even if Jess Patton or a Jess Patton authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</div><div>5. Revisions and Errata</div><div><br></div><div>The materials appearing on Jess Patton's web site could include technical, typographical, or photographic errors. Jess Patton does not warrant that any of the materials on its web site are accurate, complete, or current. Jess Patton may make changes to the materials contained on its web site at any time without notice. Jess Patton does not, however, make any commitment to update the materials.</div><div>6. Links</div><div><br></div><div>Jess Patton has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Jess Patton of the site. Use of any such linked web site is at the user's own risk.</div><div>7. Site Terms of Use Modifications</div><div><br></div><div>Jess Patton may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.</div><div>8. Governing Law</div><div><br></div><div>Any claim relating to Jess Patton's web site shall be governed by the laws of the State of tennessee without regard to its conflict of law provisions.</div><div><br></div><div>General Terms and Conditions applicable to Use of a Web Site.</div><br><div><br></div><div><br></div><div><br></div><div><br></div>"
+          "text": "&nbsp;Web Site Terms and Conditions of Use<div>1. Terms</div><div><br></div><div>By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.</div><div>2. Use License</div><div><br></div><div>&nbsp; &nbsp; Permission is granted to temporarily download one copy of the materials (information or software) on Jess Patton's web site for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</div><div>&nbsp; &nbsp; &nbsp; &nbsp; modify or copy the materials;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; attempt to decompile or reverse engineer any software contained on Jess Patton's web site;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; remove any copyright or other proprietary notations from the materials; or</div><div>&nbsp; &nbsp; &nbsp; &nbsp; transfer the materials to another person or \"mirror\" the materials on any other server.</div><div>&nbsp; &nbsp; This license shall automatically terminate if you violate any of these restrictions and may be terminated by Jess Patton at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</div><div><br></div><div>3. Disclaimer</div><div><br></div><div>&nbsp; &nbsp; The materials on Jess Patton's web site are provided \"as is\". Jess Patton makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, Jess Patton does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.</div><div><br></div><div>4. Limitations</div><div><br></div><div>In no event shall Jess Patton or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on Jess Patton's Internet site, even if Jess Patton or a Jess Patton authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</div><div>5. Revisions and Errata</div><div><br></div><div>The materials appearing on Jess Patton's web site could include technical, typographical, or photographic errors. Jess Patton does not warrant that any of the materials on its web site are accurate, complete, or current. Jess Patton may make changes to the materials contained on its web site at any time without notice. Jess Patton does not, however, make any commitment to update the materials.</div><div>6. Links</div><div><br></div><div>Jess Patton has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Jess Patton of the site. Use of any such linked web site is at the user's own risk.</div><div>7. Site Terms of Use Modifications</div><div><br></div><div>Jess Patton may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.</div><div>8. Governing Law</div><div><br></div><div>Any claim relating to Jess Patton's web site shall be governed by the laws of the State of tennessee without regard to its conflict of law provisions.</div><div><br></div><div>General Terms and Conditions applicable to Use of a Web Site.</div><br><div><br></div><div><br></div><div><br></div><div><br></div>",
+          "button": ""
         }
       ]
     },
@@ -261,35 +430,34 @@
       "components": [
         {
           "_styles": {
-            "h2": {
+            ".mbr-header .mbr-header__text": {
               "color": "#fff"
             },
-            "p": {
+            ".mbr-article": {
               "color": "#fff"
             }
           },
           "_name": "msg-box1",
           "_anchor": "msg-box1-12",
           "_params": {
+            "showTitle": true,
+            "showText": true,
             "bgImageRadio": false,
+            "bgImage": "@PROJECT_PATH@/assets/images/bg3.jpg",
             "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}bg3.jpg",
-            "bgColor": "#3C3C3C",
             "bgColorRadio": true,
+            "bgColor": "#3C3C3C",
+            "bgVideoRadio": false,
             "bgVideo": {
               "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
-            "bgVideoRadio": false,
             "overlay": false,
-            "overlayOpacity": 0.5,
             "overlayColor": "#222",
-            "inverse": false,
-            "showTitle": true,
-            "showText": true
+            "overlayOpacity": 0.5
           },
-          "button": "",
           "title": "PRIVACY POLICY",
-          "text": "<div>Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.<br></div><div><br></div><div>&nbsp; &nbsp; Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</div><div>&nbsp; &nbsp; We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.</div><div>&nbsp; &nbsp; We will only retain personal information as long as necessary for the fulfillment of those purposes.</div><div>&nbsp; &nbsp; We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.</div><div>&nbsp; &nbsp; Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.</div><div>&nbsp; &nbsp; We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.</div><div>&nbsp; &nbsp; We will make readily available to customers information about our policies and practices relating to the management of personal information.</div><div><br></div><div>We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained.</div>"
+          "text": "<div>Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.<br></div><div><br></div><div>&nbsp; &nbsp; Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</div><div>&nbsp; &nbsp; We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.</div><div>&nbsp; &nbsp; We will only retain personal information as long as necessary for the fulfillment of those purposes.</div><div>&nbsp; &nbsp; We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.</div><div>&nbsp; &nbsp; Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.</div><div>&nbsp; &nbsp; We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.</div><div>&nbsp; &nbsp; We will make readily available to customers information about our policies and practices relating to the management of personal information.</div><div><br></div><div>We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained.</div>",
+          "button": ""
         }
       ]
     }
