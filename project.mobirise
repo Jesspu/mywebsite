@@ -3,7 +3,9 @@
     "currentPage": "termsofservice.html",
     "versionFirst": "2.8.6",
     "versionPublish": "2.8.6",
-    "name": "mywebsite"
+    "name": "mywebsite",
+    "publishType": "local",
+    "publishPath": "file:///C:/Users/Jess/Documents/GitHub/mywebsite"
   },
   "pages": {
     "index.html": {
@@ -317,7 +319,7 @@
           },
           "title3": "TWIDIAL<br>(ANDROID AND IOS)",
           "caption3": "Calling app powered by Twilio. Uses the Twilio RestAPI to make bridged phone calls between a verified twilio number and your smartphone. Want to call someone from your office number on your cell phone? Want to make cheap international calls? Want to call your dev team in Russia from a local Russian number? Now you can!<i>&nbsp;</i>",
-          "button3": "<a data-app-btn=\"true\" href=\"https://play.google.com/store/apps/details?id=com.twiDial.www\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">SEE IT</a>",
+          "button3": "<a data-app-btn=\"true\" href=\"http://www.twidial.com/\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\" data-toolbar=\"-mbrBtnMove\">SEE IT</a>",
           "media4": {
             "image": {
               "src": "@PROJECT_PATH@/assets/images/unlimited-websites.png",
